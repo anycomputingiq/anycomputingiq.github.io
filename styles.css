@@ -5,6 +5,78 @@
     box-sizing: border-box;
 }
 
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
 :root {
     --primary-color: #c084fc;
     --secondary-color: #e9d5ff;
@@ -131,6 +203,7 @@ body {
     font-weight: 800;
     margin-bottom: 1rem;
     line-height: 1.2;
+    animation: slideInLeft 0.8s ease-out;
 }
 
 .gradient-text {
@@ -145,18 +218,21 @@ body {
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 1rem;
+    animation: slideInLeft 0.8s ease-out 0.2s both;
 }
 
 .hero-description {
     font-size: 1.1rem;
     color: var(--text-light);
     margin-bottom: 2rem;
+    animation: slideInLeft 0.8s ease-out 0.4s both;
 }
 
 .hero-stats {
     display: flex;
     gap: 3rem;
     margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 .stat {
@@ -182,6 +258,7 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out 0.8s both;
 }
 
 .btn {
@@ -202,8 +279,9 @@ body {
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.02);
     box-shadow: var(--shadow-lg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-secondary {
@@ -243,12 +321,14 @@ body {
 .social-icon:hover {
     background: var(--gradient-2);
     color: white;
-    transform: translateY(-3px);
+    transform: translateY(-5px) rotate(5deg) scale(1.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-image {
     display: flex;
     justify-content: center;
+    animation: slideInRight 1s ease-out 0.5s both;
 }
 
 .image-wrapper {
@@ -258,6 +338,7 @@ body {
     overflow: hidden;
     box-shadow: var(--shadow-xl);
     position: relative;
+    animation: float 3s ease-in-out infinite;
 }
 
 .image-wrapper::before {
@@ -375,8 +456,9 @@ section {
 }
 
 .gallery-item:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px) scale(1.03);
     box-shadow: var(--shadow-xl);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item img {
@@ -421,9 +503,10 @@ section {
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: var(--shadow-xl);
     border-color: var(--primary-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-card.featured {
@@ -452,6 +535,11 @@ section {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    animation: pulse 0.6s ease-in-out;
 }
 
 .service-icon i {
