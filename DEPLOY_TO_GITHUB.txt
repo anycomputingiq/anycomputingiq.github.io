@@ -1,0 +1,69 @@
+========================================================
+   DEPLOY YOUR WEBSITE TO GITHUB PAGES
+   Domain: anycomputingiq.github.io
+========================================================
+
+STEP 1: Create GitHub Account (if you don't have one)
+   - Go to: https://github.com/signup
+   - Create account with username: anycomputingiq
+   - Verify your email
+
+STEP 2: Create New Repository
+   - Go to: https://github.com/new
+   - Repository name: anycomputingiq.github.io
+   - Make it PUBLIC (required for free GitHub Pages)
+   - DO NOT initialize with README
+   - Click "Create repository"
+
+STEP 3: Connect Your Code to GitHub
+   Run these commands in PowerShell (already in the right folder):
+
+   git remote add origin https://github.com/anycomputingiq/anycomputingiq.github.io.git
+   git branch -M main
+   git push -u origin main
+
+   (You'll be asked to login to GitHub)
+
+STEP 4: Enable GitHub Pages
+   - Go to: https://github.com/anycomputingiq/anycomputingiq.github.io/settings/pages
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: / (root)
+   - Click Save
+
+STEP 5: Wait 2-3 Minutes
+   Your website will be live at:
+   https://anycomputingiq.github.io
+
+========================================================
+IMPORTANT NOTES:
+========================================================
+
+✅ Your repository is ready to push!
+✅ All files are committed
+✅ Username MUST be: anycomputingiq
+✅ Repository name MUST be: anycomputingiq.github.io
+✅ Repository must be PUBLIC (not private)
+
+========================================================
+ALTERNATIVE: If username "anycomputingiq" is taken
+========================================================
+
+Use a different username like:
+- anycomputingiq-official
+- aarij-anycomputingiq
+- anycomputingiq2026
+
+Then your site will be:
+- https://anycomputingiq-official.github.io
+- https://aarij-anycomputingiq.github.io
+- etc.
+
+========================================================
+NEED HELP?
+========================================================
+
+I'll guide you through each step!
+Your code is ready - just need to create the GitHub account.
+
+========================================================

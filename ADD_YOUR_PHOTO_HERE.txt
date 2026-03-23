@@ -1,0 +1,24 @@
+==========================================
+   HOW TO ADD YOUR PROFILE PHOTO
+==========================================
+
+STEP 1: Save your photo
+   - Right-click on the image you want to use
+   - Click "Save image as..."
+   - Navigate to this folder: C:\Users\Public\aarij-portfolio
+   - Save it with the name: profile.jpg
+   - Make sure the extension is .jpg (not .jpeg, .png, etc.)
+
+STEP 2: Refresh your website
+   - Open or refresh index.html in your browser
+   - Your photo will now appear on the website!
+
+ALTERNATIVE METHOD:
+   - Simply copy your photo file
+   - Paste it into this folder: C:\Users\Public\aarij-portfolio
+   - Rename it to: profile.jpg
+   - Refresh the website
+
+The image from your message (person in blue suit with red bow tie) should be saved as "profile.jpg" in this folder.
+
+==========================================
