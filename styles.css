@@ -131,6 +131,23 @@ body {
     padding: 1rem 20px;
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
 .nav-brand .logo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -169,6 +186,31 @@ body {
     background: var(--text-dark);
     margin: 3px 0;
     transition: 0.3s;
+}
+
+/* Channel Banner Section */
+.channel-banner {
+    padding: 120px 0 60px 0;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+.banner-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    transition: transform 0.3s ease;
+}
+
+.banner-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 /* Hero Section */
@@ -949,6 +991,19 @@ section {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+
+    .navbar-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-brand .logo {
+        font-size: 1.2rem;
+    }
+
+    .channel-banner {
+        padding: 100px 0 40px 0;
     }
 
     .nav-menu {
